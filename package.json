@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://anaalamed-space-invaders.web.app",
   "scripts": {
     "start": "parcel index.html --open",
     "build": "parcel build index.html",
