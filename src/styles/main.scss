@@ -1,0 +1,55 @@
+@import "reset";
+@import "base";
+
+$hover-text-color: royalblue;
+$inner-text-color: indigo;
+$canvas-border-color: deeppink;
+$header-shadow-color: deeppink;
+
+body {
+  background-color: papayawhip;
+
+  h2.header {
+    margin-top: 100px;
+    text-align: center;
+    cursor: pointer;
+    color: lighten(indigo, 10%);
+    text-shadow: 0px 0px 5px $header-shadow-color;
+    transition: text-shadow 300ms, color 300ms;
+    &:hover {
+      text-shadow: 0px 0px 15px skyblue;
+      color: $hover-text-color;
+    }
+  }
+
+  .start {
+    position: absolute;
+    margin-top: 40px;
+    left: 47%;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: midnightblue;
+    color: deeppink;
+
+    &:disabled {
+      background-color: grey;
+      color: white;
+    }
+  }
+
+  p {
+    margin-top: 700px;
+    text-align: center;
+  }
+  
+
+  .stage {
+    // border: 5px solid $canvas-border-color;
+    // border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+  }
+}
